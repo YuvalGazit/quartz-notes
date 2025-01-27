@@ -8,7 +8,7 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "🪴 Quartz 4.0",
+    pageTitle: "Yuval's Notes",
     pageTitleSuffix: "",
     enableSPA: true,
     enablePopovers: true,
@@ -16,7 +16,7 @@ const config: QuartzConfig = {
       provider: "plausible",
     },
     locale: "en-US",
-    baseUrl: "quartz.jzhao.xyz",
+    baseUrl: "yuvalgazit.github.io/quartz-notes",
     ignorePatterns: ["private", "templates", ".obsidian", "Myths", "YYY Templates", "YYY Other Stuff"],
     defaultDateType: "created",
     generateSocialImages: false,
@@ -69,10 +69,10 @@ const config: QuartzConfig = {
       }),
       Plugin.ObsidianFlavoredMarkdown({ enableInHtmlEmbed: false }),
       Plugin.GitHubFlavoredMarkdown(),
-      Plugin.TableOfContents(),
+      Plugin.TableOfContents({ maxDepth: 3, collapseByDefault: "false" }),
       Plugin.CrawlLinks({ markdownLinkResolution: "shortest" }),
       Plugin.Description(),
-      Plugin.Latex({ renderEngine: "mathjax" }),
+      Plugin.Latex({ renderEngine: "typst" }),
     ],
     filters: [
 	  Plugin.RemoveDrafts(),
