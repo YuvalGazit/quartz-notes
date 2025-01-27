@@ -30,7 +30,7 @@ export const defaultContentPageLayout: PageLayout = {
     Component.DesktopOnly(Component.Explorer({
 	  filterFn: (node) => {
 		// set containing names of everything you want to filter out
-		const omit = new Set(["ZZZ Files", "tags", "ZZZ Excalidraw"])
+		const omit = new Set(["content/ZZZ Files", "tags", "content/ZZZ Excalidraw"])
 		return !omit.has(node.name.toLowerCase())
 	  },
 	})),
