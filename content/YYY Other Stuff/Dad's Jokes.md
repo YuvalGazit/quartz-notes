@@ -1,3 +1,6 @@
+---
+{}
+---
 First joke:
 ![[Drawing 2024-05-10 16.41.59.excalidraw]]
 
