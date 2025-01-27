@@ -17,7 +17,7 @@ const config: QuartzConfig = {
     },
     locale: "en-US",
     baseUrl: "quartz.jzhao.xyz",
-    ignorePatterns: ["private", "templates", ".obsidian", "YYY Templates", "YYY Other Stuff"],
+    ignorePatterns: ["private", "templates", ".obsidian", "Myths", "YYY Templates", "YYY Other Stuff"],
     defaultDateType: "created",
     generateSocialImages: false,
     theme: {
@@ -72,7 +72,7 @@ const config: QuartzConfig = {
       Plugin.TableOfContents(),
       Plugin.CrawlLinks({ markdownLinkResolution: "shortest" }),
       Plugin.Description(),
-      Plugin.Latex({ renderEngine: "katex" }),
+      Plugin.Latex({ renderEngine: "mathjax" }),
     ],
     filters: [
 	  Plugin.RemoveDrafts(),
